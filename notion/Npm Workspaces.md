@@ -1,7 +1,6 @@
 # Npm Workspaces 
 
-npm workspace - 여러 관련 패키지들을 함께 관리할 수 있게 해주는 기능. -> `이를 통해 하나의 root project 에서 여러 sub project(workspace)을 관리할 수 있습니다.`
-workspace - 여러 서브 패키지, 프로젝트들을 하나의 루트 프로젝트 안에서 관리할 수 있게 해줍니다. 
+workspace - 여러 관련 패키지들을 함께 관리할 수 있게 해주는 기능. -> `이를 통해 하나의 root project 에서 여러 sub project(workspace)을 관리할 수 있습니다.`
 `workspace 을 사용하면, 각 서브 프로젝트의 의존성을 개별적으로 설치할 필요 없이, 루트 프로젝트의 node_modules 에서 관리 가능.` -> 예로 Root project 에서 package.json 에 여러 workspace(package-a, package-b) 경로 정의 가능. 
 
 npm project 와 하위 Package 
@@ -40,7 +39,6 @@ Root Project
 - package-a (package.json 의 name) (내부 저장소로 가져옴, npm link)
     - package.json
     - index.js (package.json 의 main)
-
 ```
 
 ``` javascript 
