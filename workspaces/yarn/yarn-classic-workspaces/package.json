@@ -1,0 +1,12 @@
+{
+  "name": "yarn-classic-workspaces",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "yarn@1.22.19",
+  "workspaces": [
+    "packages/*"
+  ]
+}
+
