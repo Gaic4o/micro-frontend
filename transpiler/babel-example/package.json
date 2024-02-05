@@ -1,0 +1,13 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist"
+  },
+  "packageManager": "pnpm@8.10.0+sha256.3c5d70d07b0c4849d7e07398b62bf48ca6619ca86f77981125eaab7f5ee82c4c",
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/plugin-transform-arrow-functions": "^7.23.3",
+    "@babel/preset-env": "^7.23.9"
+  }
+}

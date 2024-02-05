@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="065a02fa-c5f5-42e3-8008-b66a581ade6e" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/notion/Pnpm Workspaces.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notion/workspace.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspaces/pnpm/pnpm-workspaces/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspaces/pnpm/pnpm-workspaces/packages/a/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspaces/pnpm/pnpm-workspaces/packages/a/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspaces/pnpm/pnpm-workspaces/packages/b/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspaces/pnpm/pnpm-workspaces/packages/b/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspaces/pnpm/pnpm-workspaces/pnpm-workspace.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notion/TranspilerAndBundler.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transpiler/babel-example/.babelrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transpiler/babel-example/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transpiler/babel-example/src/arrow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notion/Npm Workspaces.md" beforeDir="false" afterPath="$PROJECT_DIR$/notion/Npm Workspaces.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +22,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="2bi1Qfi0P7VAJIZkjOvyAKbeLYK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,7 +35,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/gimminsu/Desktop/github/micro-frontend/workspaces/pnpm/pnpm-workspaces",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/minsu/Desktop/github/Micro-frontend-learn",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,6 +69,7 @@
       <workItem from="1706691926834" duration="8861000" />
       <workItem from="1706702317663" duration="1332000" />
       <workItem from="1706710957803" duration="38000" />
+      <workItem from="1707133204602" duration="6447000" />
     </task>
     <servers />
   </component>
