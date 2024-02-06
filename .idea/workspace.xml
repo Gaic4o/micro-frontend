@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="065a02fa-c5f5-42e3-8008-b66a581ade6e" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/tenser/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tenser/input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tenser/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tenser/pnpm-lock.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modular/esbuild-example/packages/test/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modular/esbuild-example/packages/test/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modular/esbuild-example/packages/test/node_modules/my-units" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modular/esbuild-example/packages/test/node_modules/ts-node" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modular/esbuild-example/packages/test/node_modules/typescript" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modular/esbuild-example/packages/untils/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modular/esbuild-example/packages/untils/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modular/esbuild-example/packages/untils/node_modules/esbuild" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modular/esbuild-example/packages/untils/node_modules/typescript" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modular/esbuild-example/packages/untils/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modular/esbuild-example/packages/untils/src/plus.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modular/esbuild-example/pnpm-workspace.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modular/rollup-example/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/modular/rollup-example/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modular/rollup-example/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modular/rollup-example/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modular/rollup-example/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/modular/rollup-example/rollup.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notion/TranspilerAndBundler.md" beforeDir="false" afterPath="$PROJECT_DIR$/notion/TranspilerAndBundler.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +35,9 @@
   "associatedIndex": 0
 }]]></component>
   <component name="ProjectId" id="2bi1Qfi0P7VAJIZkjOvyAKbeLYK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,24 +48,27 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "tenser",
-    "last_opened_file_path": "/Users/minsu/Desktop/github/Micro-frontend-learn/tenser",
+    "last_opened_file_path": "/Users/minsu/Desktop/github/Micro-frontend-learn/modular/esbuild-example/packages/untils",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "ts.external.directory.path": "/Users/gimminsu/Desktop/github/micro-frontend/ajax/elementary_school/elementary_school_main/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/minsu/Desktop/github/Micro-frontend-learn/modular/esbuild-example/packages/test/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modular/esbuild-example/packages/untils" />
+      <recent name="$PROJECT_DIR$/modular/esbuild-example/packages/test" />
       <recent name="$PROJECT_DIR$/tenser" />
       <recent name="$PROJECT_DIR$/modular/rollup-example" />
       <recent name="$PROJECT_DIR$/transpiler/babel-example" />
-      <recent name="$PROJECT_DIR$/workspaces/pnpm/pnpm-workspaces" />
-      <recent name="$PROJECT_DIR$/workspaces/pnpm/pnpm-workspaces/packages/b" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modular/esbuild-example/packages/my-units" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
@@ -74,7 +85,7 @@
       <workItem from="1706691926834" duration="8861000" />
       <workItem from="1706702317663" duration="1332000" />
       <workItem from="1706710957803" duration="38000" />
-      <workItem from="1707133204602" duration="14190000" />
+      <workItem from="1707133204602" duration="20059000" />
     </task>
     <servers />
   </component>
