@@ -1,5 +1,5 @@
 require('esbuild').build({
-    entryPoints: ['src/index.ts'],
+    entryPoints: ['src/index.js'],
     outfile: 'dist/index.js',
     bundle: true, // 이것을 하지 않으면 bundle 이 되지 않음.
     platform: "node",
