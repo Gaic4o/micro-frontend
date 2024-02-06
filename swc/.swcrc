@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/swcrc",
+    "env": {
+        "targets": "last 100 Chrome version"
+    },
+    "minify": true,
+    "jsc": {
+        "minify": {
+            "compress": true,
+            "mangle": true
+        }
+    }
+}
