@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="065a02fa-c5f5-42e3-8008-b66a581ade6e" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/swc/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swc/.swcrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swc/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swc/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swc/pnpm-lock.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swc/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swc/src/utils/math.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swc/src/utils/string.js" afterDir="false" />
+    <list default="true" id="065a02fa-c5f5-42e3-8008-b66a581ade6e" name="변경" comment="변경">
+      <change afterPath="$PROJECT_DIR$/vite/packages/ui-kit/src/components/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/packages/ui-kit/src/lib.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/pnpm-workspace.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modular/esbuild-example/packages/untils/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/modular/esbuild-example/packages/untils/build.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notion/TranspilerAndBundler.md" beforeDir="false" afterPath="$PROJECT_DIR$/notion/TranspilerAndBundler.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "esbuild",
+    "git-widget-placeholder": "swc",
     "last_opened_file_path": "/Users/minsu/Desktop/github/Micro-frontend-learn/swc",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -52,10 +46,19 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "ts.external.directory.path": "/Users/minsu/Desktop/github/Micro-frontend-learn/modular/esbuild-example/packages/test/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/minsu/Desktop/github/Micro-frontend-learn/vite/packages/ui-kit/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/swc" />
@@ -65,6 +68,8 @@
       <recent name="$PROJECT_DIR$/tenser" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vite/packages/ui-kit/src" />
+      <recent name="$PROJECT_DIR$/vite" />
       <recent name="$PROJECT_DIR$/swc" />
       <recent name="$PROJECT_DIR$/modular/esbuild-example/packages/my-units" />
     </key>
@@ -84,7 +89,8 @@
       <workItem from="1706702317663" duration="1332000" />
       <workItem from="1706710957803" duration="38000" />
       <workItem from="1707133204602" duration="20655000" />
-      <workItem from="1707213888474" duration="4033000" />
+      <workItem from="1707213888474" duration="4149000" />
+      <workItem from="1707277568243" duration="5810000" />
     </task>
     <servers />
   </component>

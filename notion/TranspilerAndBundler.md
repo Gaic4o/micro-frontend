@@ -122,3 +122,62 @@ SWC 는 Javascript, Typescript 트랜스파일링과 최적화를 해주는 번�
 4. 컴파일과, 번들링 모두를 포함하고 있음. Terser 의 역햘도 함.
 
 
+## Vite 
+
+Vite 는 처음에 Vue 에서 많이 쓰였지만, 현재는 React, Svelte 등 대표 웹 프레임워크에서 많이 사용되고 있습니다. 
+기본으로 타입스크립트, CSS Loader 등이 내장되어 있고, HMR 과 개발 서버, Proxy 등을 지원하면서 탄탄 구성으로 인기를 얻고 있음. 
+
+내부적으로 esbuild, Rollup 을 사용. 
+
+Vite - 템플릿 이용 해 프로젝트 생성 -> Vite 는 Node.js Version 18+, 20+ 을 필요로 합니다.
+
+`pnpm create vite@latest [프로젝트 이름] -- --template [템플릿 이름]`
+React 관련 템플릿 : react, react-ts, react-swc, react-swc-ts 
+
+Vite
+
+1. Hot Module Replacement (HMR)
+
+개발 중에 코드를 변경할 때 전체 페이지를 새로고침하지 않고 변경된 모듈만 교체하는 기능입니다.
+Vite는 ESM(ES Module)을 기반으로 HMR API를 제공하여, 변경 사항을 신속하고 정확하게 반영합니다.
+Vite는 Vue Single File Components, React Fast Refresh와 같은 프레임워크별 최적화된 HMR 지원을 내장하고 있습니다.
+
+2. ESM (ECMAScript Module)
+
+import와 export 구문을 사용하여 모듈을 불러오고 내보낼 수 있는 JavaScript의 공식 모듈 시스템입니다.
+Vite는 ESM을 활용하여 모듈을 빠르고 효율적으로 불러옵니다.
+
+3. CommonJS와 UMD 모듈
+
+CommonJS는 주로 Node.js 환경에서 사용되는 모듈 시스템입니다.
+UMD(Universal Module Definition)는 여러 환경에서 모듈을 사용할 수 있도록 하는 방식입니다.
+Vite는 이러한 모듈을 ESM 형식으로 사전 번들링하여 브라우저에서 사용할 수 있게 합니다.
+
+4. 사전 번들링 및 모듈 로딩
+
+Vite는 esbuild를 통해 CommonJS나 UMD로 작성된 모듈을 ESM 형식으로 변환하고 최적화합니다.
+/node_modules/.vite/deps/...와 같은 특정 URL 경로를 사용하여 ESM을 지원하는 브라우저에서 모듈을 불러옵니다.
+이 과정은 JavaScript 기반의 다른 번들러보다 빠른 콜드 스타트를 가능하게 하며, 의존성은 캐시되어 효율적인 로딩이 가능합니다.
+
+
+### 내장 로더 
+
+1. Typescript
+Vite는 TypeScript 파일을 자동으로 트랜스파일합니다. 이는 코드를 JavaScript로 변환하는 과정만을 의미하며, 타입 검사는 별도로 IDE(통합 개발 환경) 또는 빌드 프로세스를 통해 수행되도록 권장됩니다.
+
+2. JSX
+Vite는 .jsx 및 .tsx 파일을 지원합니다. 이 파일들은 esbuild를 사용하여 컴파일되므로, 빠른 컴파일 속도를 기대할 수 있습니다.
+
+3. CSS
+.css 파일을 가져오면, Vite는 HMR(핫 모듈 교체)을 지원하는 <style> 태그를 통해 웹 페이지에 스타일을 동적으로 주입합니다. 이를 통해 개발 중 스타일 변경 사항이 즉시 반영됩니다.
+
+4. 이미지 및 정적 에셋 (예: PNG)
+정적 에셋(이미지 파일 등)을 import하면, Vite는 해당 에셋에 대한 공개 URL을 반환합니다. 이는 웹 애플리케이션에서 이미지와 같은 자원을 쉽게 참조할 수 있게 해줍니다.
+
+5. JSON
+JSON 파일은 직접 import가 가능합니다. 필요한 필드만을 선택하여 가져올 수 있으며, 이는 불필요한 데이터를 제거하는 트리 쉐이킹(tree shaking)을 가능하게 합니다.
+
+### Webpack 과 Vite 차이점 
+
+빌드 방식 : Webpack 은 모든 모듈을 분석 후, 하나의 번들로 결합하는 접근 방식을 사용합니다. Vite 는 개발 모드에서 네이티브 ES 모듈을 활용하여 필요한 부분만을 빠르게 로드하고 변환합니다. 
+
