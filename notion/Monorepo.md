@@ -1,4 +1,4 @@
-# Monorepo
+ # Monorepo
  
 - 모노레포는 잘 정의된 관계를 가진 여러 개의 개별 프로젝트가 포함된 단일 리포지토리 입니다. 
 
@@ -66,4 +66,39 @@ Monorepo 구현 방식 결정.
 
 - Project constraints and visibility (중속성 관계 저한)
   프로젝트 간의 종속성과 제약 조건을 설정하고, 이를 통해 프로젝트의 구조와 상호작용을 명확하게 관리할 수 있습니다.
+
+
+
+## Lerna 
+
+Javascript/Typescript Project 에서 여러 Package 를 효율적으로 관리하고 배포할 수 있도록 도와주는 도구 입니다. 
+모노레포 식에서 통해 여러 관련 패키지를 단일 저장소에서 관리할 수 있게 해줍니다. 
+
+
+1. Script 실행. 
+
+- 모든 패키지에 스크립트 실행 : `lerna run test` 명령어를 사용 해 모노레포 내의 모든 package 에서 테스트 스크립트 실행 가능.
+- 특정 A 패키지에 스크립트 실행 : `lerna run test --scope=a` 명령어로 특정 패키지에서만 스크립트를 실행 가능. (특정 작업이 필요한 패키지에만 명령를 적용)
+- 모든 패키지에 여러 스크립트 실행 : 여러 스크립트 동시에 실행하려면 `lerna run` 명령어에 스크립트 이름을 쉼표로 구분하여추가. 
+
+2. 작업 결과 캐싱 (lerna add-caching)
+
+- Lerna 자체에서는 작업 결과를 캐싱하는 기능이 내장 x, NX와 같은 다른 도구와 함께 사용하여 이 기능을 구현 가능. (변화가 없을 떄, 작업 재실행 x, 빌드 시간을 단축 할 수 있습니다.)
+
+3. 프로젝트 Graph 탐색 (nx graph)
+
+- 모노레포 내의 패키지 간 의존성을 시각화하고 분석할 수 있습니다. 
+
+4. 작업 실행 분산 ((nx connect-to-nx-cloud) (nx generate @nrwl/workspace:ci-workflow --ci=github))
+
+- CI 환경에서 모든 작업을 효율적으로 실행하기 위해 NX Cloud와 같은 서비스를 사용하여 작업을 병렬화하고 성능을 향상시킬 수 있습니다.
+
+5. Version and Publish 
+
+- Lerna는 패키지의 버전 관리와 npm에의 게시를 간소화합니다. 변경 사항이 있는 패키지의 버전을 증가시키고, 필요한 경우에만 패키지를 배포할 수 있습니다.
+
+일반적 npm 게시를 하지 않을 패키지는 privte: true 정의. 
+버전 증가 lerna version --no-private 
+npm 에 게시 lerna publish --no-private 
+
 
