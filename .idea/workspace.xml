@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="065a02fa-c5f5-42e3-8008-b66a581ade6e" name="변경" comment="변경">
-      <change afterPath="$PROJECT_DIR$/monorepo/lerna/packages/a/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monorepo/nx/packages/utils/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monorepo/nx/pnpm-workspace.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notion/Monorepo.md" beforeDir="false" afterPath="$PROJECT_DIR$/notion/Monorepo.md" afterDir="false" />
     </list>
@@ -36,7 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "lerna",
+    "git-widget-placeholder": "nx",
     "last_opened_file_path": "/Users/minsu/Desktop/github/Micro-frontend-learn/vite",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -44,7 +45,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "ts.external.directory.path": "/Users/minsu/Desktop/github/Micro-frontend-learn/vite/packages/ui-kit/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/minsu/Desktop/github/Micro-frontend-learn/monorepo/nx/packages/utils/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -90,7 +91,7 @@
       <workItem from="1707213888474" duration="4149000" />
       <workItem from="1707277568243" duration="6279000" />
       <workItem from="1707286343584" duration="96000" />
-      <workItem from="1707781763594" duration="5360000" />
+      <workItem from="1707781763594" duration="8493000" />
     </task>
     <servers />
   </component>
