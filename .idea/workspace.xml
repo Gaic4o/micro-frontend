@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bab0287-1609-4550-97ee-a73ece3e1056" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/monorepo/turborepo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monorepo/turborepo/packages/utils/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monorepo/turborepo/packages/utils/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monorepo/turborepo/pnpm-workspace.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monorepo/turborepo/turbo.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notion/Monorepo.md" beforeDir="false" afterPath="$PROJECT_DIR$/notion/Monorepo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notion/Npm Workspaces.md" beforeDir="false" afterPath="$PROJECT_DIR$/notion/Npm Workspaces.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +18,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "turborepo",
+    "git-widget-placeholder": "notion",
     "last_opened_file_path": "/Users/minsu/Desktop/github/Micro-frontend-learn/monorepo/turborepo/packages/utils",
     "node.js.selected.package.tslint": "(autodetect)",
     "ts.external.directory.path": "/Users/minsu/Desktop/github/Micro-frontend-learn/modular/esbuild-example/packages/test/node_modules/typescript/lib"
