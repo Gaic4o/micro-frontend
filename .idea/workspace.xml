@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="065a02fa-c5f5-42e3-8008-b66a581ade6e" name="변경" comment="변경">
+    <list default="true" id="3bab0287-1609-4550-97ee-a73ece3e1056" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/monorepo/turborepo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monorepo/turborepo/packages/utils/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monorepo/turborepo/packages/utils/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monorepo/turborepo/pnpm-workspace.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monorepo/turborepo/turbo.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notion/Monorepo.md" beforeDir="false" afterPath="$PROJECT_DIR$/notion/Monorepo.md" afterDir="false" />
     </list>
@@ -13,90 +18,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="2bi1Qfi0P7VAJIZkjOvyAKbeLYK" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;nx&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/minsu/Desktop/github/Micro-frontend-learn/monorepo/nx&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/minsu/Desktop/github/Micro-frontend-learn/monorepo/nx/packages/utils/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "turborepo",
+    "last_opened_file_path": "/Users/minsu/Desktop/github/Micro-frontend-learn/monorepo/turborepo/packages/utils",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "ts.external.directory.path": "/Users/minsu/Desktop/github/Micro-frontend-learn/modular/esbuild-example/packages/test/node_modules/typescript/lib"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
         <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
         <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
-        <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/monorepo/nx" />
-      <recent name="$PROJECT_DIR$/vite" />
-      <recent name="$PROJECT_DIR$/swc" />
-      <recent name="$PROJECT_DIR$/modular/esbuild-example" />
-      <recent name="$PROJECT_DIR$/modular/esbuild-example/packages/untils" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/vite/packages/ui-kit/src" />
-      <recent name="$PROJECT_DIR$/vite" />
-      <recent name="$PROJECT_DIR$/swc" />
-      <recent name="$PROJECT_DIR$/modular/esbuild-example/packages/my-units" />
+      <recent name="$PROJECT_DIR$/monorepo/turborepo/packages/utils" />
+      <recent name="$PROJECT_DIR$/monorepo/turborepo" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="065a02fa-c5f5-42e3-8008-b66a581ade6e" name="변경" comment="" />
-      <created>1706683070226</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1706683070226</updated>
-      <workItem from="1706683071393" duration="826000" />
-      <workItem from="1706683900735" duration="4579000" />
-      <workItem from="1706690471861" duration="1450000" />
-      <workItem from="1706691926834" duration="8861000" />
-      <workItem from="1706702317663" duration="1332000" />
-      <workItem from="1706710957803" duration="38000" />
-      <workItem from="1707133204602" duration="20655000" />
-      <workItem from="1707213888474" duration="4149000" />
-      <workItem from="1707277568243" duration="6279000" />
-      <workItem from="1707286343584" duration="96000" />
-      <workItem from="1707781763594" duration="9031000" />
-      <workItem from="1707826757277" duration="2000" />
-      <workItem from="1708042467631" duration="1543000" />
-      <workItem from="1708044014737" duration="715000" />
-    </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="변경" />
   </component>
 </project>
