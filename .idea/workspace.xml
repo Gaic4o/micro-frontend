@@ -5,9 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bab0287-1609-4550-97ee-a73ece3e1056" name="Changes" comment="변경">
+      <change afterPath="$PROJECT_DIR$/minification/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modular/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transpiler/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notion/Pnpm Workspaces.md" beforeDir="false" afterPath="$PROJECT_DIR$/notion/Pnpm Workspaces.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notion/Yarn Workspaces.md" beforeDir="false" afterPath="$PROJECT_DIR$/notion/Yarn Workspaces.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notion/Modular.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notion/TranspilerAndBundler.md" beforeDir="false" afterPath="$PROJECT_DIR$/notion/TranspilerAndBundler.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swc/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swc/.swcrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swc/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swc/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swc/pnpm-lock.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swc/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swc/src/utils/math.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swc/src/utils/string.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenser/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenser/input.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenser/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenser/pnpm-lock.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,20 +47,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "notion",
-    "last_opened_file_path": "/Users/minsu/Desktop/github/Micro-frontend-learn/monorepo/turborepo/packages/utils",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "pnpm",
-    "ts.external.directory.path": "/Users/minsu/Desktop/github/Micro-frontend-learn/modular/esbuild-example/packages/test/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;notion&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/minsu/Desktop/github/Micro-frontend-learn/monorepo/turborepo/packages/utils&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/minsu/Desktop/github/Micro-frontend-learn/modular/esbuild-example/packages/test/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -70,7 +85,12 @@
       <option name="presentableId" value="Default" />
       <updated>1708074495144</updated>
       <workItem from="1708074496343" duration="72000" />
-      <workItem from="1708133742536" duration="6234000" />
+      <workItem from="1708133742536" duration="6546000" />
+      <workItem from="1708157080711" duration="600000" />
+      <workItem from="1708305430228" duration="3117000" />
+      <workItem from="1708308934326" duration="428000" />
+      <workItem from="1708309378167" duration="82000" />
+      <workItem from="1708309677562" duration="1717000" />
     </task>
     <servers />
   </component>
