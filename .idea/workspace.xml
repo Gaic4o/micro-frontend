@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bab0287-1609-4550-97ee-a73ece3e1056" name="Changes" comment="변경">
-      <change afterPath="$PROJECT_DIR$/minification/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modular/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transpiler/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notion/Modular.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notion/TranspilerAndBundler.md" beforeDir="false" afterPath="$PROJECT_DIR$/notion/TranspilerAndBundler.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swc/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/swc/.swcrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/swc/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/swc/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/swc/pnpm-lock.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/swc/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/swc/src/utils/math.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/swc/src/utils/string.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenser/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenser/input.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenser/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenser/pnpm-lock.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +73,8 @@
       <workItem from="1708305430228" duration="3117000" />
       <workItem from="1708308934326" duration="428000" />
       <workItem from="1708309378167" duration="82000" />
-      <workItem from="1708309677562" duration="1717000" />
+      <workItem from="1708309677562" duration="2109000" />
+      <workItem from="1708314037997" duration="42000" />
     </task>
     <servers />
   </component>
