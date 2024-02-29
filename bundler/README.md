@@ -1,3 +1,18 @@
+# Bundler
+
+웹 사이트를 만들 떄 많은 파일들 (Javascript file, 스타일시트 file, image file, etc ...) 이 파일들이 많아질 수록 웹 페이지가 느려지고 관리도 어려워집니다.
+-> 번들러는 이러한 문제를 해결하기 위해, 탄생 했습니다. 여러 파일을 모아 하나 또는 소수의 파일로 만들어주며, 이 과정에서 파일들 사이에 관계도 파악 해 줍니다.
+
+대표적 예시 : `Webpack`
+-> 모듈 : (모든 파일 Javascript, CSS, Iamge, Font 등) 모듈로 취급.
+-> 의존성 그래프 : 프로젝트 시작점 index.js 시작 해, 모듈 간 의존성을 추적해 의존성 그래프를 만듭니다.
+-> 로더 (Loader) : Webpack 은 기본적으로 Javascript, JSON 파일만 이해 가능, 다른 타입 파일(CSS, Image, Font 등) 처리하기 위한 Webpack Loader 사용.
+
+1. 진입점 설정 : webpack.config.js 파일에서 지정된 진입점에서 시작 해, 애플리케이션의 모듈과 라이브러리를 로드.
+2. 로더 처리 : webpack 은 설정 규칙에 따라, 적절 로더를 사용 해 파일을 처리 style-loader, css-loader 는 CSS 파일 처리, babel-loader 는 ES6 이상의 Javascript 변환.
+3. 플러그인 실행 : 모든 파일이 로드되고 변환된 후, Webpack 다양한 최적화 작업을 수행하기 위한 플러그인을 실행.
+4. 출력 : Webpack 은 모든 모듈을 포함한 결과물 bundle.js 을 출력합니다.
+
 # Webpack
 
 Webpack 은 자바스크립트 어플리케이션을 위한 정적 모듈 번들러.
