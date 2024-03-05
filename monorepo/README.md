@@ -123,3 +123,73 @@ pnpm exec lerna publish --no-private
 yarn lerna publish --no-private
 npx lerna publish --no-private
 ```
+
+# NX
+
+NX 는 모노레포 프로젝트에서 효율적으로 관리할 수 있게 해주는 도구 입니다.
+
+## Run Tasks
+
+NX 를 사용하면, 개별 프로젝트 또는 전체 워크스페이스에서 다양한 작업(예 : 빌드, 테스트, 린트 등)을 실행 가능합니다.
+
+```bash
+// my-app project 을 build
+nx build my-app
+```
+
+```bash
+// 전체 워크스페이스에 대한 태스트 실행
+nx run-many --all --target=build
+```
+
+```bash
+// 여러 태스크를 한 번에 실행 예시
+nx run-many --all --target=build,test
+```
+
+## Cache Task Results
+
+NX `작업의 실행 결과를 캐시해, 동일 입력으로 다시 실행할 필요가 없도록 합니다.` 빌드 시간을 크게 줄여줍니다.
+캐시 사용 예시 : 캐시는 자동으로 관리되므로, 개발자가 별도 설정 x, NX 는 실행할 떄 마다 이전에 실행된 작업의 결과를 캐시에서 검사하여 사용할 수 있는지 확인합니다.
+
+## Use Remote Caching
+
+NX Cloud 를 사용해, 캐시된 결과를 원격으로 저장하고 공유 가능. 팀원 간 작업 실행 시간을 줄이는 데 도움이 됩니다.
+
+```bash
+// NX Cloud 연결 예시
+nx connect-to-nx-cloud
+```
+
+이 명령은 프로젝트를 NX Cloud에 연결합니다. 이후 작업 결과는 원격 캐시에 저장되어, 동일 작업이 필요할 떄 더 빠르게 실행 가능합니다.
+
+## Distribution Task Execution
+
+NX Cloud 를 사용 해 CI 환경에서 작업 실행을 병렬화하면 성능 개선할 수 있습니다.
+
+```bash
+// CI에서 작업 졍렬화 설정 예시
+nx generate @nrwl/workspace:ci-workflow --ci=github
+```
+
+Github Actions 을 위한 CI 워크플로우를 생성 해, CI 작업을 병렬로 실행할 수 있도록 설정합니다.
+
+## Automate Updating Dependencies
+
+NX 는 사용 중인 패키지의 버전을 자동으로 업데이트하고, 필요에 따라 설정이나 코드를 마이그레이션할 수 있습니다.
+의존성 자동 업데이트 예시 : NX `nx migrate latest` 명령을 통해 사용 중인 NX 및 기타 npm 패키지의 최신 버전으로 쉽게 업그레이드할 수 있습니다.
+
+## Enforce Module Boundaries
+
+NX는 프로젝트 간에 잘 정의된 API에만 의존하도록 강제하며, 의존성 규칙을 선언적으로 설정 가능합니다.
+
+모듈 경계 강제 예시 : `nx.json` 또는 `eslint` 설정에서 의존성 규칙을 정의 가능, 이를 통해 특정 라이브러리가 다른 라이브러리에 의존하는 것을 제한하거나 허용 가능.
+
+# TurboRepo
+
+모노레포 환경에서 빠르고 쉽게 빌드 시간을 단축 시킬 수 있음.
+CPU 코어를 활용해 벙렬로 실행해서, 빌드 프로세스 속도를 높일 수 있음. -> 로컬 캐시, 리모트 캐시, 병렬 실행 등 쉽게 사용 가능.
+yarn, npm workspace 에서도 사용 가능하지만, pnpm 과 같이 사용하길 권장합니다.
+
+정리 해 보자면 TurboRepo 에서는 build 을 할 떄, 캐시로 계속 축적되어서, 수정되지 않은 패키지들은 캐시로 축적되고, 수정 된 것들만 빌드가 되는 프로세스여서,
+빌드 시간을 줄일 수 있습니다.
