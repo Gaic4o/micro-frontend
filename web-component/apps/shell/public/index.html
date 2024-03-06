@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="http://localhost:3001/bundle.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">버튼</a>
+        </li>
+        <li>
+          <a href="/description">요약</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="app"></div>
+    <script type="text/javascript">
+      const webComponentsByRoute = {
+        "/": "button-component",
+        "/description": "description-component",
+      };
+      const webComponentType = webComponentsByRoute[window.location.pathname];
+      const root = document.getElementById("app");
+      const webComponent = document.createElement(webComponentType);
+      root.appendChild(webComponent);
+    </script>
+  </body>
+</html>
