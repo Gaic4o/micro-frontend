@@ -9,7 +9,7 @@ Web Component 는 웹 표준 기술을 사용 해, `재사용 가능한 커스�
 캡슐화 (Shadow DOM) : 스타일과 마크업을 캡슐화해서, 컴포넌트의 내부 구현을 외부와 격리시킵니다.
 HTML 템플릿 (Templates and Slots) : 코드 조각을 `<template>` 태그로 정의 후, `<slot>` 을 사용 해 동적으로 컨텐츠를 삽입 가능합니다.
 
-### Custom Elements 란?
+### Custom Elements란?
 
 Custom Element 을 사용하면, 개발자는 자신만의 HTML 을 생성할 수 있습니다. 이를 통해 웹 애플리케이션에 재사용 가능한 커스텀 엘리먼트를 쉽게 통합 가능합니다.
 
@@ -29,7 +29,7 @@ Custom Element 을 사용하면, 개발자는 자신만의 HTML 을 생성할 �
 ```
 
 `MyGreeting` 이라는 이름의 Class 정의 후, `my-greeting` 이라는 tag 이름으로 Custom Element 로 등록합니다.
-웹 페이지에서는 `<my-gretting>` 태그를 사용 해, 해당 태그는 자동으로 `MyGreeting` Class의 인스턴스가 되어 `Hello, Custom Element!` 라는 텍스트를 표시하게 됩니다.
+웹 페이지에서는 `<my-greeting>` 태그를 사용 해, 해당 태그는 자동으로 `MyGreeting` Class의 인스턴스가 되어 `Hello, Custom Element!` 라는 텍스트를 표시하게 됩니다.
 
 ### HTML 템플릿(<template> 및 <slot>)
 
