@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.todo-list {
+  margin: 20px 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  width: calc(100% - 120px);
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
