@@ -1,5 +1,4 @@
-# Learn micro frontend.
+# Modern Frontend Development
 
-The Micro-frontend project focuses on exploring and implementing modern frontend architectures through JavaScript modularity, use of transpilers, and workspaces and monorepo management strategies.
-
-We organize simple projects and concepts of related tools that help implement micro frontends or frontends.
+This project serves as a comprehensive exploration into the world of frontend development, extending beyond the confines of micro frontends to embrace the full spectrum of modern frontend technologies and practices.
+It is designed to provide a practical learning environment for understanding and implementing various frontend architectures, tools, and strategies.
