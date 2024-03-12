@@ -103,3 +103,44 @@ npm install을 실행하면, 작업 공간에 정의된 패키지 간의 의존�
 Next.js Project 에서 디자인 시스템 패키지를 npm link 으로 가져온 다음,
 로컬 환경에서 디자인 시스템 버튼 컴포넌트, token, theme 등을 구축 한 것들을 실시간으로 next.js 패키지에서 직접 가져와서 사용 하고, 유지 보수를 할 수 있습니다.
 그러면 동시에 2개의 패키지를 개발 해 나갈 수 있는 장점이 있습니다.
+
+## 의존성 보안 취약점
+
+npm 을 사용할 떄, 프로젝트에서는 보통 NPM Package 에서 여러 패키지가 하위로 들어가, 의존성을 가지게 됩니다.
+
+### 의존성 보안 취약점의 예시
+
+가상의 상황: 내가 A라는 패키지를 프로젝트에 사용하고 있습니다. A는 B라는 다른 패키지에 의존하고, B는 또 다른 패키지 C에 의존합니다. 만약 C 패키지에 보안 취약점이 발견된다면, 이는 `A를 통해 당신의 프로젝트에도 영향을 미칠 수 있습니다.` C의 취약점이 공격자에게 악용될 경우, 데이터 유출이나 시스템 손상과 같은 심각한 보안 문제로 이어질 수 있습니다.
+
+### npm audit 사용하기
+
+`npm aduit` 은 프로젝트의 의존성 트리를 분석 해 알려준 보안 취약점을 식별 해 줍니다.
+이 명령어를 실행하면, `npm 에 가진 모든 의존성들을 검사하게 되고, 각 의존성에 대한 보안 취약점 정보를 가진 데이터베이스를 조회합니다.`
+만약에 취약점이 발견된다면, npm 은 이를 보고하고 가능한 해결 방안을 제시 해 줍니다. -> `이를 통해 개발자는 취약점을 신속히 파악후 적절 조치를 취할 수 있습니다.`
+
+```bash
+npm audit
+
+=== npm audit security report ===
+
+# Run  npm update react-scripts --depth 5  to resolve 1 vulnerability
+SEMVER WARNING: Recommended action is a potentially breaking change
+
+High            Arbitrary Code Execution
+Package         react-scripts
+Dependency of   react-scripts
+Path            react-scripts > some-dependency > vulnerable-package
+More info       https://npmjs.com/advisories/1234
+```
+
+- Vulnerability : 발견된 취약점의 심각도가 "High" 으로 표시되어 있음, `이는 취약점이 매우 심각함을 의미.`
+- Package : 취약점이 발견된 패키지 이름은 `react-scripts` 입니다.
+- Dependency of : `react-scripts` 는 직접 의존하는 패키지로, 프로젝트에 포함되어 있음.
+- Path : 취약점이 있는 경로, `react-scripts > some-dependency > vulnerable-package` 통해 취약점이 발견 됐습니다.
+- More info : 취약점에 대한 자세한 정보를 제공하는 링크, 이 링크를 통해 취약점에 대해 더 자세히 알아볼 수 있습니다.
+
+결과에 제시된 해결 방법에 따라 취약점을 해결 할 수 있습니다. npm update react-scripts --depth 5 명령어를 실행하라고 권장하고 있습니다.
+
+```bash
+npm update react-scripts --depth 5
+```
