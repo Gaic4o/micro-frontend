@@ -68,10 +68,6 @@ module.exports = {
 };
 ```
 
-### Tree Shaking
-
-`Webpack은 사용하지 않는 코드를 제거하는 Tree Shaking 기능을 지원합니다.` 이를 통해 최종 번들의 크기를 줄일 수 있습니다. 예를 들어, 라이브러리에서 특정 함수만 사용할 경우, 해당 함수만 번들에 포함시킬 수 있습니다.
-
 ### Babel과 SWC
 
 Babel: 자바스크립트 코드를 변환하기 위한 툴체인으로, 최신 자바스크립트 코드를 이전 버전의 자바스크립트로 변환할 수 있습니다.
@@ -82,6 +78,29 @@ SWC: Babel의 대안으로, 빠른 성능을 제공하는 Rust로 작성된 컴�
 html-webpack-plugin: HTML 파일을 생성하고, 자동으로 번들을 추가합니다.
 webpack-dev-server: 개발 중에 웹팩의 빌드를 메모리에 저장하고, 라이브 리로딩을 지원합니다.
 css-loader, style-loader: CSS 파일을 자바스크립트 번들에 포함시키고, 동적으로 스타일을 적용할 수 있습니다.
+
+#### webpack esbuild
+
+webpack 에서 esbuild 플러그인을 사용하는 이유는 빌드 성능을 좀 더 향상시키기 위해서 사용합니다.
+esbuild 는 go 언어로 되어 있어서, 코드 파싱, 출력과 소스맵 생성을 모두 병렬 처리 가능합니다.
+
+[webpack esbuild plugin 을 이용한 최적화 하는 방법 링크](https://medium.com/@sauravtiru/how-i-decreased-our-react-app-build-time-by-96-26-webpack-esbuild-part-2-a692f4793e3f)
+
+#### css-minimizer-webpack-plugin
+
+webpack 을 사용해 CSS 파입을 최소화(압축)하는 데 사용되는 플러그인 입니다.
+
+압축 : CSS 파일의 공백, 주석, 불필요한 세미콜론 등을 제거하여 파일 크기을 줄임.
+재구성 : CSS 코드를 재구성하여 더 효율적인 방식으로 표현될 수 있도록 합니다. 예를 들어, 여러 CSS 규칙을 병합 가능.
+PostCSS 호환 : 이 플러그인은 PostCSS 생태계와 호환되므로, 추가적 PostCSS 플러그인을 사용하여 CSS 처리 과정을 더욱 확장 가능합니다.
+
+[css minimizer 플러그인 적용 하는 방법 링크](https://runebook.dev/ko/docs/webpack/plugins/mini-css-extract-plugin?)
+
+#### Webpack Tree Shaking
+
+`Webpack은 사용하지 않는 코드를 제거하는 Tree Shaking 기능을 지원합니다.` 이를 통해 최종 번들의 크기를 줄일 수 있습니다. 예를 들어, 라이브러리에서 특정 함수만 사용할 경우, 해당 함수만 번들에 포함시킬 수 있습니다.
+
+[Tree Shaking 적용하고 전 후 차이 링크](https://medium.com/naver-fe-platform/webpack%EC%97%90%EC%84%9C-tree-shaking-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0-1748e0e0c365)
 
 ## Vite
 
