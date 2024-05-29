@@ -1,5 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { EsbuildPlugin } = require("esbuild-loader");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -17,6 +19,11 @@ module.exports = {
           loader: "swc-loader",
         },
       },
+      {
+        test: /\.[jt]sx?$/,
+        target: "es2015",
+        use: "esbuild-loader",
+      },
     ],
   },
   plugins: [
@@ -24,6 +31,24 @@ module.exports = {
       template: "./public/index.html",
     }),
   ],
+  optimization: {
+    minimizer: [
+      new EsbuildPlugin({
+        target: "es2015",
+        css: true, // Apply minification to CSS assets
+      }),
+    ],
+  },
+
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+    ],
+  },
+  plugins: [new MiniCssExtractPlugin()],
   devServer: {
     port: 3000,
   },
